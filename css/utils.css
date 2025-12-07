@@ -1,0 +1,117 @@
+:root {
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+/* text color */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-danger { color: var(--danger); }
+.text-dark { color: var(--dark); }
+.text-light { color: var(--light); }
+
+/* bg-colors */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-danger { background-color: var(--danger); }
+.bg-warning { background-color: var(--warning); }
+.bg-dark { background-color: var(--dark); }
+.bg-light { background-color: var(--light); }
+
+/* buttons */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.btn-secondary {
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+.btn-dark {
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+
+.btn-outline-primary {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--dark);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--white);
+}
+
+/* flex items */
+.flex-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 20px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+/* flex grid */
+.flex-grid .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-grid .column{
+    flex: 25%;
+    padding: 0 .4rem;
+}
+
+/* section */
+.section-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.section-header h2{
+    margin: 3rem 0;
+    font-size: 4rem;
+}
+
+.section-padding{
+    padding: 2rem 2rem 4rem;
+}
